@@ -1,0 +1,350 @@
+.floor-list .ant-tree li .ant-tree-node-content-wrapper {
+    color: #fff;
+}
+
+.floor-list .ant-tree li .ant-tree-node-content-wrapper:hover:before {
+    background-color: blue !important;
+}
+
+.floor-list .ant-tree li .ant-tree-iconEle .anticon {
+    width: 24px;
+    height: 24px;
+    background: url("../images/index/floor.png") no-repeat;
+    background-size: 80%;
+    background-position: center;
+    display: inline-block !important;
+}
+
+/*.floor-list .ant-tree .ant-tree-treenode-switcher-open:nth-of-type(4) .ant-tree-iconEle .anticon {*/
+/*    background: url("../images/index/apron.png") no-repeat;*/
+/*    width: 24px;*/
+/*    height: 24px;*/
+/*    background-size: 80%;*/
+/*    background-position: center;*/
+/*    display: inline-block !important;*/
+/*}*/
+
+.floor-list .ant-tree li .ant-tree-node-content-wrapper .anticon svg,
+.floor-list .ant-tree li .ant-tree-child-tree .anticon,
+.floor-list .ant-tree .ant-tree-treenode-switcher-open:nth-of-type(4) .ant-tree-child-tree .anticon {
+    display: none !important;
+}
+
+.floor-list {
+    height: 60vh;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.floor-list::-webkit-scrollbar{
+    width: 0px;
+}
+
+.model-property .ant-modal-content {
+    background: url(../images/index/bg.png) no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    overflow: hidden;
+}
+
+.model-property .ant-modal-content .ant-modal-body {
+    height: 500px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.model-property .ant-modal-content .ant-modal-body::-webkit-scrollbar {
+    width: 0px;
+}
+
+.model-property .ant-modal-content .ant-divider-horizontal {
+    margin: 5px 0 !important;
+    border: 0px;
+    border-top: 1px dashed rgb(41, 72, 108);
+    background: rgba(0, 0, 0, 0);
+    float: left;
+}
+
+.model-property .ant-modal-content .header {
+    font-size: 18px;
+}
+
+.model-property .ant-modal-content ul {
+    width: 100%;
+    float: left;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.model-property .ant-modal-content ul li {
+    width: 100%;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+.model-property .ant-modal-content ul li section {
+    width: 50%;
+    float: left;
+}
+
+.section-scorll {
+    height: calc(100% - 222px) !important;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.section-scorll::-webkit-scrollbar,
+.sensor::-webkit-scrollbar{
+    width: 0px;
+}
+
+.sensor {
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.sensor .ant-table-body {
+    color: #fff;
+}
+
+.sensor .ant-table-thead>tr>th {
+    background: rgba(0, 0, 0, 0);
+    color: #fff;
+}
+
+.sensor .ant-table-tbody .ant-table-row:hover,
+.sensor .ant-table-tbody .ant-table-row-expand-icon-cell:hover,
+.sensor .ant-table-thead>tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)>td,
+.sensor .ant-table-tbody>tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)>td,
+.sensor .ant-table-thead>tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)>td,
+.sensor .ant-table-tbody>tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected)>td {
+    background: #003da8 !important;
+}
+
+.sensor .ant-table-row-expand-icon {
+    color: #1890ff !important;
+}
+
+.sensor tr.ant-table-expanded-row,
+tr.ant-table-expanded-row {
+    background: rgba(0, 0, 0, 0) !important;
+}
+
+.bim-section {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bim-section ul::-webkit-scrollbar,
+.device-section::-webkit-scrollbar {
+    width: 0;
+}
+
+.bim-section .header {
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 24px;
+}
+.bim-section .ant-divider-horizontal {
+    margin: 5px 0 !important;
+    border: 0px;
+    border-top: 1px dashed rgb(41, 72, 108);
+    background: rgba(0, 0, 0, 0);
+    float: left;
+}
+
+
+.bim-section ul {
+    width: 100%;
+    height: calc(100% - 58px);
+    overflow: hidden;
+    overflow-y: auto;
+    float: left;
+    list-style-type: none;
+    margin-bottom: 0;
+    padding: 0 24px;
+    color: #fff;
+}
+
+.bim-section ul li {
+    width: 100%;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+.bim-section ul li section {
+    width: 50%;
+    float: left;
+}
+
+.device-section {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    color: #fff;
+    font-size: 16px;
+}
+
+.device-section .ant-row {
+    padding: 10px 24px;
+}
+
+.device-section .ant-tabs-nav {
+    color: #fff;
+}
+.device-section .ant-tabs-content  {
+    min-height: 400px;
+}
+.device-section .lineChart {
+    width: 336px;
+    height: 336px;
+}
+
+.device-section .ant-tabs-content .ant-row {
+    padding: 10px 0px;
+}
+
+.menuPlane a{
+    position: relative;
+    top: -0.2vw;
+    font-weight: bold;
+    color: #90adc9;
+    font-size: 1vw;
+}
+
+
+.menuPlane .menuItem{
+    margin: 0 1vw;
+    width: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menuPlane .menuItem div img{
+    width: 57.59px;
+    height: 57.59px;
+    background: url("../../assets/images/默认.png") no-repeat 0 0;
+    background-size:cover;
+}
+.menuPlane a.router-link-exact-active div img{
+    background: url("../../assets/images/触发.png") no-repeat 0 0;
+    background-size:cover;
+}
+
+.menuPlane .ant-menu {
+    background-color: rgba(0, 0, 0, 0);
+    line-height: normal;
+}
+
+.ant-menu-horizontal > .ant-menu-item:hover, .ant-menu-horizontal > .ant-menu-submenu:hover, .ant-menu-horizontal > .ant-menu-item-active, .ant-menu-horizontal > .ant-menu-submenu-active, .ant-menu-horizontal > .ant-menu-item-open, .ant-menu-horizontal > .ant-menu-submenu-open, .ant-menu-horizontal > .ant-menu-item-selected, .ant-menu-horizontal > .ant-menu-submenu-selected {
+    border-bottom: 0;
+}
+.menuPlane .ant-menu .ant-menu-submenu-arrow {
+    display: none;
+}
+.ant-menu-submenu > .ant-menu {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #1890ff;
+}
+.ant-menu-submenu > .ant-menu .ant-menu-item {
+    background-color: rgba(0, 0, 0, 0);
+}
+.ant-menu-item > a, .ant-menu-item > a:hover,
+.ant-menu-item-selected > a, .ant-menu-item-selected > a:hover {
+    color: #fff;
+}
+
+.check-section .ant-list {
+    color: #fff;
+}
+.check-section .ant-list .ant-list-items {
+    padding: 0px 10px;
+}
+
+.check-section .ant-list .ant-list-item {
+    border-bottom-color: #1890ff;
+}
+
+.base-info-section .buildingInfoBox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('../images/科技框.png') no-repeat;
+    background-size: 100% 100%;
+    color: aliceblue;
+    font-size: 0.8vw;
+}
+.base-info-section .closeBtn{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.base-info-section .BuildInfoTitle{
+    width: 80%;
+    padding: 10px;
+    color: #43E6FE;
+    font-weight: 600;
+    font-size: 1.2vw;
+    float: left;
+}
+.base-info-section .buildingImgBox{
+    width: calc(100% - 4px);
+    height: 30%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #adf1ff10;
+    margin-top: 10px;
+}
+.base-info-section .buildingInfo{
+    width: calc(100% - 30px);
+    margin: 0 15px;
+    float: left;
+}
+.base-info-section tr{
+    height: 1.7em;
+}
+.base-info-section tr:hover{
+    box-shadow: inset 0 0 5px 0 #00d4f3;
+}
+.base-info-section tr:hover>td{
+    color: #00d4f3;
+    transform: scale(1.05);
+}
+
+.base-info-section .contactCard img {
+    vertical-align: baseline;
+}
+.archives-section .ant-tree,
+.check-section .ant-tree {
+    padding: 20px;
+}
+.archives-section .ant-tree,
+.archives-section .ant-tree-title,
+.check-section .ant-tree,
+.check-section .ant-tree-title {
+    color: #fff;
+}
+.archives-section .ant-tree-title,
+.check-section .ant-tree-title {
+    max-width: 90%;
+    white-space: break-spaces;
+    word-break: break-all;
+}
+.archives-section .ant-tree li .ant-tree-node-content-wrapper,
+.check-section .ant-tree li .ant-tree-node-content-wrapper {
+    line-height: 24px;
+    min-height: 24px;
+    height: auto;
+}
+
+.archives-section .rightSide {
+    overflow: hidden;
+    overflow-y: auto;
+    height: 100%;
+}
