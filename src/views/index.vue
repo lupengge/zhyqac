@@ -127,6 +127,31 @@ import LeftSide from '../components/index/leftSide.vue'
 import axios from 'axios'
 
 /**
+ *
+ * @param {obj} json 要下载成josn文件的对象
+ * @param {string} filename 下载文件的名称
+ */
+function downloadJSON(json, filename = "downFile.txt") {
+  let blob = new Blob([JSON.stringify(json, null, 2)], {
+    type: 'application/json'
+  });
+  let reader = new FileReader();
+  reader.addEventListener("loadend", function () {
+    let pom = document.createElement('a');
+    pom.setAttribute('href', reader.result);
+    pom.setAttribute('download', filename);
+    if (document.createEvent) {
+      let event = document.createEvent('MouseEvents');
+      event.initEvent('click', true, true);
+      pom.dispatchEvent(event);
+    } else {
+      pom.click();
+    }
+  });
+  reader.readAsDataURL(blob);
+}
+
+/**
  *  视点类
  * 记录了相机必要的参数
  */
@@ -413,7 +438,7 @@ export default {
       localStorage.setItem('viewPoints', JSON.stringify(this.viewPoints))
     },
     exportData(){
-
+      downloadJSON(JSON.parse(localStorage.viewPoints))
     }
   }
 }
